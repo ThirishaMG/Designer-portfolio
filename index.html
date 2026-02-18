@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI/UX Designer Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    color:#000;
+}
+
+/* ---------- HERO ---------- */
+
+.topbar{
+    margin:20px;
+    padding:15px 25px;
+    background:#e9e9e9;
+    border-radius:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.hero{
+    padding:40px 80px;
+}
+
+.hero h1{
+    font-size:100px;
+    font-weight:900;
+    margin-bottom:40px;
+}
+
+.hero-content{
+    display:flex;
+    gap:60px;
+    align-items:center;
+}
+
+.hero img{
+    width:480px;
+    border-radius:30px;
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero-text h2{
+    font-size:32px;
+    line-height:1.4;
+}
+
+.hero-text p{
+    margin-top:20px;
+    line-height:1.8;
+    color:#444;
+}
+
+
+
+
+/* ---------- SKILLS ---------- */
+
+.skills{
+    padding:80px;
+    background:#fff;
+}
+
+.skills-title{
+    font-size:80px;
+    font-weight:900;
+    margin-bottom:60px;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.skill-box{
+    background:#e9e9e9;
+    padding:40px 20px;
+    border-radius:25px;
+    text-align:center;
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.skill-box h4{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.skill-box p{
+    font-size:14px;
+    color:#555;
+}
+
+.skill-box:hover{
+    background:#000;
+    color:#fff;
+    transform:translateY(-10px);
+}
+
+.skill-box:hover p{
+    color:#ddd;
+}
+
+@media(max-width:1000px){
+    .skills-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.section{
+    padding:80px;
+}
+
+.section-title{
+    font-size:80px;
+    font-weight:900;
+    margin-bottom:60px;
+}
+
+.project{
+    display:flex;
+    gap:60px;
+    align-items:center;
+    margin-bottom:80px;
+}
+
+.project img{
+    width:600px;
+    border-radius:30px;
+}
+
+.project-content{
+    max-width:450px;
+}
+
+.project-content h3{
+    font-size:50px;
+    margin:15px 0;
+}
+
+.project-content p{
+    line-height:1.8;
+    color:#444;
+    margin-bottom:25px;
+}
+
+.btn{
+    padding:15px 40px;
+    border-radius:30px;
+    border:1px solid #ccc;
+    background:#e9e9e9;
+    text-decoration:none;
+    color:#000;
+}
+
+/* ---------- SERVICES ---------- */
+
+.services{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+}
+
+.service-card{
+    background:#e9e9e9;
+    padding:30px;
+    border-radius:25px;
+}
+
+.service-card h4{
+    margin-bottom:15px;
+}
+
+/* ---------- AWARDS ---------- */
+
+.awards{
+    background:#000;
+    color:#fff;
+    padding:80px;
+}
+
+.awards p{
+    padding:25px 0;
+    border-bottom:1px solid #333;
+    font-size:22px;
+}
+
+/* ---------- PUBLICATIONS ---------- */
+
+.publications{
+    background:#000;
+    color:#fff;
+    padding:80px;
+    font-size:100px;
+    font-weight:900;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:1000px){
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero-content,
+.project{
+    flex-direction:column;
+}
+
+.project img,
+.hero img{
+    width:100%;
+}
+
+.services{
+    grid-template-columns:1fr;
+}
+
+.section-title{
+    font-size:50px;
+}
+
+.publications{
+    font-size:50px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="topbar">
+    <h3>THIRISHA MG</h3>
+    <div>•••</div>
+</div>
+
+<section class="hero">
+    <h1>DESIGNER</h1>
+
+    <div class="hero-content">
+        <img src="https://i.pinimg.com/1200x/a8/99/6d/a8996de7a9b2540d4f2fcbaf16872def.jpg">
+        <div class="hero-text">
+            <h2>Skilled UI/UX designer</h2>
+            <p>
+                With a keen eye for detail and a passion for creating seamless user experiences,the desire to create meaningful and impactful digital experiences. 
+                I believe design is more than aesthetics — it is about understanding people, solving real problems, and delivering intuitive solutions that truly 
+                make a difference.With a strong foundation in user research, wireframing, prototyping, and interaction design, I transform 
+                complex ideas into seamless, engaging interfaces. I pay close attention to detail, usability, and micro-interactions to 
+                ensure every experience feels effortless and purposeful.MY goal is to design products that not only look refined but also create value for users and businesses alike.
+                
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- SKILLS -->
+<section class="skills">
+    <div class="skills-title">Skills</div>
+
+    <div class="skills-grid">
+
+        <div class="skill-box">
+            <h4>Color Theory</h4>
+            <p>Canva</p>
+        </div>
+
+        <div class="skill-box">
+            <h4>Wireframing</h4>
+            <p>Figma / Sketch</p>
+        </div>
+
+        <div class="skill-box">
+            <h4>Prototyping</h4>
+            <p>Adobe XD</p>
+        </div>
+
+        <div class="skill-box">
+            <h4>User Journey Mapping</h4>
+            <p>Figma</p>
+        </div>
+
+        <div class="skill-box">
+            <h4>HTML</h4>
+            <p>Semantic & responsive layouts</p>
+        </div>
+
+        <div class="skill-box">
+            <h4>CSS</h4>
+            <p>Modern UI styling & animations</p>
+        </div>
+
+        <div class="skill-box">
+            <h4>JavaScript</h4>
+            <p>Interactive web experiences</p>
+        </div>
+
+        <div class="skill-box">
+            <h4>User Research</h4>
+            <p>Component-based development</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="project">
+        <img src="https://i.pinimg.com/1200x/dc/a4/a0/dca4a0b5cef7048c2f81a3085e02f470.jpg">
+        <div class="project-content">
+            <small>Proffessional Design</small>
+            <h3>Interview Test Tab</h3>
+            <p>An interview test task is a practical assignment designed to evaluate a candidate’s real-world skills, 
+            creativity, and problem-solving abilities relevant to the job role. It demonstrates the candidate’s 
+            approach to research, ideation, wireframing, visual design, and overall execution within a 
+            given timeframe. This task highlights not only technical expertise but also design thinking, 
+            attention to detail, and the ability to translate requirements into effective user-centered solutions.</p>
+            <a href="https://www.figma.com/design/3uyz11CIXZWnsFvW4WWppD/Untitled?node-id=0-1&t=OnUf2je6YHKnqCvn-1" class="btn">View Project</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="https://i.pinimg.com/1200x/81/d8/70/81d87061a477b72f2671eeae86db18fb.jpg">
+        <div class="project-content">
+            <small>Mood board </small>
+            <h3>Travel</h3>
+            <p>A travel mood board visually communicates the emotion of exploration and wanderlust 
+            through scenic landscapes, diverse cultural elements, soft sunset hues, ocean blues, earthy 
+            neutrals, handwritten-style typography, and immersive imagery that inspires curiosity, movement, and meaningful global experiences.
+            It sets the visual direction for a design that feels adventurous, refreshing, and emotionally engaging.</p>
+            <a href="https://www.figma.com/design/GRutZ9je6Fn4FPTMDkISpc/task-7?t=OnUf2je6YHKnqCvn-1" class="btn">View Project</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="https://i.pinimg.com/736x/23/c5/13/23c513f3e8a965e05d3f59fe2b5bb8fe.jpg">
+        <div class="project-content">
+            <small>Website Design</small>
+            <h3>Foodiee</h3>
+            <p>Foodiee showcases delicious menus, vibrant visuals, and an easy ordering experience designed 
+            to make food discovery simple and enjoyable. The platform focuses on appetizing imagery, clean 
+            layout, intuitive navigation, and smooth user flows that guide customers from browsing to checkout 
+            effortlessly. The design emphasizes warmth, freshness, and user convenience to create an engaging and seamless digital dining experience.</p>
+            <a href="https://www.figma.com/design/OW7fSpBZBIvE48LYGan4iR/Untitled?t=OnUf2je6YHKnqCvn-1" class="btn">View Project</a>
+        </div>
+    </div>
+
+
+     <div class="project">
+        <img src="https://i.pinimg.com/1200x/9b/fe/68/9bfe68b148a35bae6cf5695bcf71fb6f.jpg">
+        <div class="project-content">
+            <small>Brand Design</small>
+            <h3>Fashion Brand</h3>
+            <p>This fashion brand website was designed in Figma to deliver a refined, modern, and 
+            user-centered digital shopping experience. The interface emphasizes strong visual hierarchy, 
+            premium typography, balanced whitespace, and a cohesive color system aligned with the brand 
+            identity. A structured layout and intuitive navigation enhance product discoverability, while 
+            clear call-to-action elements streamline the user journey from browsing to checkout. The design 
+            demonstrates expertise in visual design, branding consistency, and responsive UI principles.</p>
+            <a href="https://www.figma.com/design/cIXZ8qvnWhYINHgTCO9adj/1st?node-id=0-1&t=oc4ccuCCEHoLiTB7-1" class="btn">View Project</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="https://i.pinimg.com/736x/23/e5/ae/23e5aec8d1233f83aa041cf58e15b4b1.jpg">
+        <div class="project-content">
+            <small>Login Page</small>
+            <h3>web</h3>
+            <p>Focus on simplicity, clarity, and user accessibility. The layout follows a clean 
+            structure with clear input fields, strong visual hierarchy, and intuitive call-to-action 
+            buttons to ensure a seamless authentication experience. Attention was given to spacing, 
+            typography, color contrast, and responsive design principles to enhance usability and 
+            maintain brand consistency.</p>
+            <a href="https://www.figma.com/design/s17mIxmWyRoiGlrMdfL7I7/task-8?t=oc4ccuCCEHoLiTB7-1" class="btn">View Project</a>
+        </div>
+</section>
+
+<!-- AWARDS -->
+<section class="awards">
+    <p>Contanct : 6369456376</p>
+    <p>Mail : thiyatrisha101@gmail.com</p>
+    <p>LinkdIn : https://www.linkedin.com/in/thirisha-m-g-a</p>
+    <p>Github : https://github.com/ThirishaMG</p>
+</section>
+
+
+</body>
+</html>
